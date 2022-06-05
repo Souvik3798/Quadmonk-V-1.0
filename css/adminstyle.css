@@ -1,0 +1,65 @@
+/* login form css */
+
+.loginform {
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+}
+
+.loginform .formwidth {
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+    border: 1px solid rgb(190, 185, 185);
+    padding: 3rem;
+    border-radius: 5px;
+}
+
+.loginform a {
+    text-decoration: none;
+}
+
+.loginform a:hover {
+    text-decoration: underline;
+}
+
+
+/* end of login form css */
+
+
+/* banner update css @adminpanel */
+
+.updatebanner {
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+}
+
+.updatebanner .formwidth {
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+    border: 1px solid rgb(190, 185, 185);
+    padding: 3rem;
+    border-radius: 5px;
+}
+
+
+/*end  banner update css @adminpanel */
+
+
+/* *************************************************************************** */
+
+
+/* MEDIA QUARIES */
+
+
+/* *************************************************************************** */
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .loginform .formwidth {
+        width: 100%;
+    }
+    .updatebanner .formwidth {
+        width: 100%;
+    }
+}
