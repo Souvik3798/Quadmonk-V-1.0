@@ -113,7 +113,7 @@
                     <p>Room No 202,Mahender Singh Building, beside Hotel Rajadeepam, Dollygunj, Port Blair,<br> Andaman and Nicobar Islands 744103</p>
                     <p>Phone:+91-9382217100</p>
 
-                    <p class="px-5">&nbsp; support@quadmonk.com</p>
+                    <p class="px-5">&nbsp; <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=support@quadmonk.com" target="_blank" style="font-size: 16px;"><u>support@quadmonk.com</u> </a></p>
 
 
                 </div>
