@@ -21,7 +21,7 @@
             <h1 class="text-center mb-5">FAQ</h1>
             <div class="row justify-content-center align-items-center">
                 <div class="col-md-6">
-                    <h1>QuadMonk "#TechMonks for all you #Technical Needs".</h1>
+                    <h1 class="text-dark"> <span class="text-danger">Q</span>uad<span class="text-primary">M</span>onk "<span class="text-primary">#TechMonks</span> for all your <span class="text-primary">#Technical Needs</span> "</h1>
                     <p class="mt-3">Confused about Technology selection? or want a consultation for your upgardation ? we are always there for you for all your technical needs</p>
                 </div>
                 <div class="col-md-6">

@@ -1,0 +1,652 @@
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+        * {
+            font-family: 'poppins', sans-serif;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        nav {
+            border-top: 5px solid #2666CF;
+            box-shadow: 0 .5rem 1rem rgb(0, 0, 0, .1);
+        }
+        
+        .custom-nav .navbar-brand {
+            font-size: 2rem;
+        }
+        
+        .custom-nav .nav-link {
+            font-size: 1rem;
+            font-weight: 500;
+            color: rgb(127, 137, 145);
+        }
+        
+        .bg-light {
+            background-color: #fff!important;
+        }
+        
+        .sliderbanner .custom-img {
+            width: 100%;
+            height: 100vh;
+            background-position: center;
+            background-size: cover;
+        }
+        
+        .sliderbanner .carousel-inner h5 {
+            font-size: 3rem;
+            font-weight: 500;
+            color: #fff;
+        }
+        
+        .sliderbanner .carousel-inner p {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #fff;
+        }
+        /* to align the caption text in center of the image */
+        
+        .carousel-caption {
+            transform: translateY(-50%);
+            bottom: initial;
+            top: 50%
+        }
+        /*   .carousel-caption {
+            margin-bottom: 12rem;
+        }*/
+        /* recomadation animation css */
+        
+        .recomandation span {
+            color: #2666CF;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        /* end of recomadation animation css */
+        
+        .about .c-border {
+            border-color: #2666CF;
+        }
+        
+        .about p {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 0.8rem;
+            color: rgb(31, 29, 29);
+            text-align: justify;
+        }
+        
+        .ourservices .c-border {
+            border-color: #fff;
+        }
+        
+        .ourservices i {
+            color: #2666CF;
+            font-size: 2rem;
+            padding-bottom: 1rem;
+        }
+        
+        .ourservices h6 {
+            color: black;
+        }
+        
+        .ourservices p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.8rem;
+            color: rgb(31, 29, 29);
+        }
+        
+        .premium-services i {
+            font-size: 3rem;
+            color: #2666CF;
+        }
+        
+        .premium-services p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.8rem;
+            color: rgb(31, 29, 29);
+            text-align: justify;
+        }
+        
+        .premium-services .card {
+            border-color: #2666CF;
+        }
+        
+        .clients p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.8rem;
+            color: rgb(31, 29, 29);
+            text-align: justify;
+        }
+        
+        .clients .item {
+            height: 100px;
+            width: 100px;
+        }
+
+        /* price plances css */
+        .carousel-wrap {
+            margin: 90px auto;
+            padding: 0 5%;
+            width: 80%;
+            position: relative;
+          }
+          
+          /* fix blank or flashing items on carousel */
+          .owl-carousel .item {
+            position: relative;
+            z-index: 100; 
+            -webkit-backface-visibility: hidden; 
+          }
+          
+          /* end fix */
+          .owl-nav > div {
+            margin-top: -26px;
+            position: absolute;
+            top: 50%;
+            color: #cdcbcd;
+          }
+          
+          .owl-nav i {
+            font-size: 52px;
+          }
+          
+          .owl-nav .owl-prev {
+            left: -30px;
+          }
+          
+          .owl-nav .owl-next {
+            right: -30px;
+          }
+
+
+        .plans .card {
+            border-color: rgb(210, 205, 205);
+            border-bottom: 5px solid #2666CF;
+            box-shadow: 0 14px 26px rgba(0, 0, 0, 0.04);
+            transition: all 0.2s ease-out;
+            cursor: pointer;
+        }
+        
+        .plans .card:hover {
+            border-color: #2666CF;
+            transform: translateY(-5px) scale(1.005) translateZ(0);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.11), 0 0px 0px #434a4e;
+        }
+        
+        .plans h1 {
+            color: #2666CF;
+        }
+        
+        .plans p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.8rem;
+            color: rgb(31, 29, 29);
+        }
+        
+        .plans i {
+            color: #2666CF;
+        }
+        
+        .plans .fa-xmark {
+            color: rgb(240, 3, 62);
+        }
+        
+        .plans .btn {
+            background-color: #2666CF;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #fff;
+            border-radius: 100px;
+            transition: all 0.3s ease;
+        }
+        
+        .plans .btn:hover {
+            border-color: #2666CF;
+            background-color: #FFF;
+            color: rgb(31, 29, 29);
+        }
+        
+        .plans .c-text {
+            background-color: #2666CF;
+            font-size: 0.8rem;
+            font-weight: 400;
+            color: rgb(252, 251, 251);
+        }
+        
+        .callback {
+            background-color: whitesmoke;
+        }
+        
+        .callback p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.9rem;
+            color: rgb(31, 29, 29);
+        }
+        
+        .callback .c-text {
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.8rem;
+            color: rgb(31, 29, 29);
+        }
+        
+        .callback .btn {
+            background-color: #2666CF;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #fff;
+            border-radius: 100px;
+            transition: all 0.3s ease;
+        }
+        
+        .callback .btn:hover {
+            border-color: #2666CF;
+            background-color: #FFF;
+            color: rgb(31, 29, 29);
+        }
+        
+        .footer {
+            border-top: 5px solid #2666CF;
+            background-color: rgb(41, 40, 40);
+            color: #fff;
+        }
+        
+        .footer h5 {
+            color: rgb(240, 231, 231);
+        }
+        
+        .footer li {
+            list-style: none;
+        }
+        
+        .footer a,
+        p {
+            text-decoration: none;
+            color: rgb(177, 169, 169);
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.8rem;
+        }
+        
+        .footer i {
+            font-size: 1.5rem;
+            cursor: pointer;
+            margin: 10px;
+        }
+        
+        .dev-info .devinfo {
+            background-color: rgb(26, 25, 25);
+            color: #fff;
+        }
+        /* model css for get quatation */
+        
+        .modal .btn {
+            background-color: #2666CF;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #fff;
+            border-radius: 100px;
+            transition: all 0.3s ease;
+        }
+        
+        .modal .btn:hover {
+            border-color: #2666CF;
+            background-color: #FFF;
+            color: rgb(31, 29, 29);
+        }
+        
+        .modal .btn-close {
+            background-color: rgb(255, 60, 26);
+        }
+        /* side bar social media css */
+        /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+        
+        .icon-bar {
+            position: fixed;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+        /* Style the icon bar links */
+        
+        .icon-bar a {
+            display: block;
+            text-align: center;
+            padding: 10px;
+            margin-top: 2px;
+            transition: all 0.3s ease;
+            color: white;
+            font-size: 20px;
+        }
+        /* Style the social media icons with color, if you want */
+        
+        .icon-bar a:hover {
+            background-color: #2666CF;
+        }
+        
+        .facebook {
+            background: #3B5998;
+            color: white;
+        }
+        
+        .twitter {
+            background: #55ACEE;
+            color: white;
+        }
+        
+        .google {
+            background: #dd4b39;
+            color: white;
+        }
+        
+        .youtube {
+            background: #bb0000;
+            color: white;
+        }
+        /* end of side bar social media css */
+        /* scroll up button css */
+        
+        #myBtn {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Fixed/sticky position */
+            bottom: 20px;
+            /* Place the button at the bottom of the page */
+            right: 30px;
+            /* Place the button 30px from the right */
+            z-index: 99;
+            /* Make sure it does not overlap */
+            border: none;
+            /* Remove borders */
+            outline: none;
+            /* Remove outline */
+            background-color: #2666CF;
+            /* Set a background color */
+            color: white;
+            /* Text color */
+            cursor: pointer;
+            /* Add a mouse pointer on hover */
+            padding: 15px;
+            /* Some padding */
+            border-radius: 10px;
+            /* Rounded corners */
+            font-size: 18px;
+            /* Increase font size */
+        }
+        
+        #myBtn:hover {
+            background-color: #063075;
+            /* Add a dark-grey background on hover */
+        }
+
+        .cursor {
+            display: inline-block;
+            height: 20px;
+            width: 2px;
+            background: rgb(35, 35, 35);
+            vertical-align: middle;
+            animation: 1s blink linear infinite;
+          }
+          @keyframes blink {
+            0%,49% {
+              opacity: 0;
+            }
+            50%,100% {
+              opacity: 1;
+            }
+          }
+
+        /* end of scroll up button css */
+        /* *************************************************************************** */
+        /* FAQ PAGE CSS */
+        /* *************************************************************************** */
+        
+        .bc-custom nav {
+            width: 100%;
+            height: 15vh;
+            box-shadow: none;
+            background-color: whitesmoke;
+        }
+        
+        .bc-custom a {
+            text-decoration: none;
+        }
+        
+        .faq .bc-custom-btn {
+            background-color: #2666CF;
+            color: #fff;
+        }
+        
+        .faq p {
+            color: rgb(83, 75, 75);
+        }
+
+        /* *************************************************************************** */
+        /* PORTFOLIO PAGE CSS */
+        /* *************************************************************************** */
+        
+        .filter-button {
+            font-size: 18px;
+            border: 1px solid #2666CF;
+            border-radius: 5px;
+            text-align: center;
+            color: #2666CF;
+            ;
+            margin-bottom: 30px;
+        }
+        
+        .filter-button:hover {
+            font-size: 18px;
+            border: 1px solid #2666CF;
+            border-radius: 5px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #2666CF;
+        }
+        
+        .btn-default:active .filter-button:active {
+            background-color: #42B32F;
+            color: white;
+        }
+        
+        .gallery_product {
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .portfolio img {
+            width: 70%;
+            height: 30vh;
+            border-radius: 5px;
+        }
+        
+        .portfolio img:hover {
+            transform: translateY(-5px) scale(1.005) translateZ(0);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.11), 0 0px 0px #434a4e;
+        }
+        
+        #portfolio .card {
+            border: none;
+            background: #ffffff;
+            width: 100%;
+            /* card width presently set as 100%*/
+            height: 30vh;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .image-flip:hover .backside,
+        .image-flip.hover .backside {
+            -webkit-transform: rotateY(0deg);
+            -moz-transform: rotateY(0deg);
+            -o-transform: rotateY(0deg);
+            -ms-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+            border-radius: .25rem;
+        }
+        
+        .image-flip:hover .frontside,
+        .image-flip.hover .frontside {
+            -webkit-transform: rotateY(180deg);
+            -moz-transform: rotateY(180deg);
+            -o-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+        }
+        
+        .mainflip {
+            -webkit-transition: 1s;
+            -webkit-transform-style: preserve-3d;
+            -ms-transition: 1s;
+            -moz-transition: 1s;
+            -moz-transform: perspective(1000px);
+            -moz-transform-style: preserve-3d;
+            -ms-transform-style: preserve-3d;
+            transition: 1s;
+            transform-style: preserve-3d;
+            position: relative;
+        }
+        
+        .frontside {
+            position: relative;
+            -webkit-transform: rotateY(0deg);
+            -ms-transform: rotateY(0deg);
+            z-index: 2;
+            margin-bottom: 30px;
+        }
+        
+        .backside {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: white;
+            -webkit-transform: rotateY(-180deg);
+            -moz-transform: rotateY(-180deg);
+            -o-transform: rotateY(-180deg);
+            -ms-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+            -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+            -moz-box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+        }
+        
+        .frontside,
+        .backside {
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+            -ms-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -webkit-transition: 1s;
+            -webkit-transform-style: preserve-3d;
+            -moz-transition: 1s;
+            -moz-transform-style: preserve-3d;
+            -o-transition: 1s;
+            -o-transform-style: preserve-3d;
+            -ms-transition: 1s;
+            -ms-transform-style: preserve-3d;
+            transition: 1s;
+            transform-style: preserve-3d;
+        }
+        
+        .frontside .card,
+        .backside .card {
+            min-height: 212px;
+        }
+        
+        .backside .card a {
+            font-size: 18px;
+            color: #2666CF !important;
+            text-decoration: none;
+        }
+        
+        .backside .card a:hover {
+            color: #2666CF !important;
+            text-decoration: underline;
+        }
+        
+        .frontside .card .card-title,
+        .backside .card .card-title {
+            color: #2666CF !important;
+        }
+        
+        .frontside .card img {
+            width: 100%;
+            height: 30vh;
+            border-radius: 5px;
+        }
+        
+        .backside .card {
+            width: 100%;
+            height: 30vh;
+            border-radius: 5px;
+        }
+
+        /* *************************************************************************** */
+        /* CONTACT US CSS */
+        /* *************************************************************************** */
+        
+        .contactUs-form .btn {
+            background-color: #2666CF;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #fff;
+            border-radius: 100px;
+            transition: all 0.3s ease;
+        }
+        
+        .contactUs-form .btn:hover {
+            border-color: #2666CF;
+            background-color: #FFF;
+            color: rgb(31, 29, 29);
+        }
+        
+        .contactUs-form i {
+            color: #2666CF;
+            padding-right: 10px;
+        }
+        /* *************************************************************************** */
+        /* ABOUT US PAGE CSS */
+        /* *************************************************************************** */
+        
+        .about-us h3 {
+            color: #2666CF;
+        }
+        
+        .about-us p {
+            color: #434a4e;
+            text-align: justify;
+        }
+        
+        .wtcu .card {
+            border: none;
+        }
+        
+        .wtcu .card img {
+            align-self: center;
+        }
+        /* *************************************************************************** */
+        /* T & C PAGE CSS */
+        /* *************************************************************************** */
+        
+        .tandC p {
+            color: #4a5257;
+        }
+        /* *************************************************************************** */
+        /* MEDIA QUARIES */
+        /* *************************************************************************** */
+        /* *************************************************************************** */
+        /* MEDIA QUARIES FOR INDES.HTML SOCIAL MEDIA ICONS  */
+        /* *************************************************************************** */
+        
+        @media only screen and (max-width: 768px) {
+            /* For mobile phones: */
+            .icon-bar a {
+                display: none;
+            }
+        }

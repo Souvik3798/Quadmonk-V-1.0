@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="Description" CONTENT="Your tech best friend ">
-    <link rel="shortcut icon" href="{{ asset('images/logo.png')}}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('images/title-icon-logo.jpeg')}}" type="image/x-icon">
 
     <!-- Bootstrap CSS v5.0.2 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -15,6 +15,12 @@
     />
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="{{asset('css/adminstyle.css')}}">
+    <link rel="stylesheet" href="{{asset('css/adminstyle1.css')}}">
+     <!-- for services section -->
+     <link rel="stylesheet" href="{{ asset('css/services-premium.css')}}">
+     <link rel="stylesheet" href="{{ asset('css/services.css')}}">
+     <link rel="stylesheet" href="{{ asset('css/pricing.css')}}">
+     <link rel="stylesheet" href="{{ asset('css/style1.css')}}">
     <!-- casousel css cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
@@ -31,7 +37,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top pt-1 pb-1 custom-nav">
 
         <div class="container">
-            <a class="navbar-brand" href="{{url('/')}}"> <img src="{{ asset('images/logo.png')}}" alt="" style="width: 120px;"> QuadMonk</a>
+            <a class="navbar-brand" href="{{url('/')}}"> <img src="{{ asset('images/logo.png')}}" alt="" style="width: 120px;"> <span class="text-danger">Q</span>uad<span class="text-primary">M</span>onk</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>

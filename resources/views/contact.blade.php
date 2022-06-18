@@ -15,6 +15,11 @@
     </div>
 
     <!-- faq section -->
+    @if(session('success'))
+        <div class="alert alert-success">
+            {{ session('success') }}
+        </div>
+    @endif
     <section class="contactUs-form mt-5">
         <div class="container">
             <h1 class="text-center mb-5">Our Contact</h1>
@@ -31,11 +36,7 @@
                     <p class="mt-3">https://quadmonk.com</p>
 
                 </div>
-                @if(session('success'))
-                    <div class="alert alert-success">
-                        {{ session('success') }}
-                    </div>
-                @endif
+
                 <form method="POST" action="contact" class="col-md-6 mt-5 ">
                     @csrf
                     <div class="mb-3 ">

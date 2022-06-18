@@ -1,6 +1,78 @@
 @extends('layout/main')
 @section('content')
 
+<style>
+    body{
+         font-family: url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');;
+    }
+    #te{
+        font-size:medium;
+    }
+    h3{
+        font-size: xx-large;
+    }
+
+    .why-us h2 {
+    position: relative;
+    margin-bottom: 35px;
+}
+.why-us h2::after {
+    content: "";
+    width: 120px;
+    height: 3px;
+    display: inline-block;
+    background: #3975ed;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: -20px;
+    margin: 0 auto;
+}
+
+.why-us .box {
+    padding: 70px 60px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.10);
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+    position: relative;
+    /* background-color: rgb(107, 183, 249); */
+    max-height: 230px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+.why-us .box:hover {
+	padding: 80px 80px 200px 80px;
+	box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.20);
+}
+.why-us .box img {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: -1;
+	opacity: 1;
+	transition:all ease 1s;
+}
+.why-us .box:hover img {
+	opacity:1;
+}
+.why-us .box h4 {
+	font-size: 24px;
+	font-weight: 600;
+	padding: 0;
+	margin: 20px 0;
+	color: #f4f4f4;
+	text-decoration: none;
+    text-align: center;
+}
+/* .why-us .box:hover span,
+.why-us .box:hover h4 a,
+.why-us .box:hover p {
+  	color: rgb(255, 255, 255);
+} */
+
+</style>
 
     <!-- breadcrumb -->
 <div class="container mt-5 bc-custom">
@@ -22,11 +94,11 @@
         <h1 class="text-center mb-5">About Us</h1>
         <div class="row justify-content-center align-items-center">
             <div class="col-md-6">
-                <img src="{{ asset('images/aboutus.jpg')}}" alt="" srcset="" style="width: 90%;">
+                <img src="{{asset('images/aboutus.gif')}}" alt="" srcset="" style="width: 90%;">
             </div>
             <div class="col-md-6">
                 <h3>Our Story</h3>
-                <p class="mt-3">Founded in 2003, ​Momleetech is headquartered in Chennai, India. Our business name changed in 2005 from Momleetech to Thai Research Info tech. On 02 February 2017, Thai Research Info Tech​ sole proprietorship company converted into
+                <p class="mt-3" id="te">Founded in 2003, ​Momleetech is headquartered in Chennai, India. Our business name changed in 2005 from Momleetech to Thai Research Info tech. On 02 February 2017, Thai Research Info Tech​ sole proprietorship company converted into
                     the Thai Research Info Tech (OPC) Private Limited ​company. We are an e-commerce solutions provider, Content Management ,E-learning and Online Services company with the latest technologies. Thai Research Info Tech is the leading
                     IT solutions company trusted by SMBs, SMEs & large enterprises to grow their businesses globally. Specifically designed for the services economy, our scalable and comprehensive solutions include a full-featured, modular and secure
                     E-Commerce platform, a flexible subscription billing engine, a channel partner order and revenue management solution, and integrated global payments, as well as a constantly expanding worldwide digital affiliate network.</p>
@@ -37,62 +109,64 @@
 </section>
 
 <!-- why to choose Us -->
-<center>
-    <section id="wtcu" class="wtcu ">
-        <h2 class="mt-5 mb-5 text-center">Why to Choose Us</h2>
-        <div class="container">
-            <div class="row justify-content-center align-items-center  gy-5">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="{{ asset('images/why to choose us/certified company.webp')}}" class="card-img-top" alt="wtcu-image" style="width: 30%;">
-                        <div class="card-body">
-                            <h5>Certified Company</h5>
-                        </div>
-                    </div>
+
+<section class="why-us">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h2 class="mt-5 text-center">Why Choose Us</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 col-lg-4">
+                <div class="box">
+                    <h4>Certified Company</h4>
+                    <img src="{{asset('images/why to choose us/certified company.webp')}}" height="auto" width="auto"class="image-fluid" alt="">
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="{{ asset('images/why to choose us/support.webp')}}" class="card-img-top" alt="wtcu-image" style="width: 30%;">
-                        <div class="card-body">
-                            <h5>Great Support</h5>
-                        </div>
-                    </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4">
+                <div class="box">
+                    <h4>Great Support</h4>
+                    <img src="{{asset('images/why to choose us/support.webp')}}" alt="">
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="{{ asset('images/why to choose us/price.jpg')}}" class="card-img-top" alt="wtcu-image" style="width: 30%;">
-                        <div class="card-body">
-                            <h5>Reasonable Pricing</h5>
-                        </div>
-                    </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4">
+                <div class="box">
+
+                    <h4>Reasonable Pricing</h4>
+                    <img src="{{asset('images/why to choose us/price.jpg')}}" alt="">
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="{{ asset('images/why to choose us/team.webp')}}" class="card-img-top" alt="wtcu-image" style="width: 30%;">
-                        <div class="card-body">
-                            <h5>Experienced Team</h5>
-                        </div>
-                    </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4">
+                <div class="box">
+
+                    <h4>Experienced Team</h4>
+                    <img src="{{asset('images/why to choose us/team.webp')}}" alt="">
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="{{ asset('images/why to choose us/success.jpg')}}" class="card-img-top" alt="wtcu-image" style="width: 30%;">
-                        <div class="card-body">
-                            <h5>Success Guarantee</h5>
-                        </div>
-                    </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4">
+                <div class="box">
+
+                    <h4>Success Guarantee</h4>
+                    <img src="{{asset('images/why to choose us/success.jpg')}}" alt="">
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="{{ asset('images/why to choose us/tools.jpg')}}" class="card-img-top" alt="wtcu-image" style="width: 30%;">
-                        <div class="card-body">
-                            <h5>Managed Tools</h5>
-                        </div>
-                    </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4">
+                <div class="box">
+
+                    <h4>Managed Tools</h4>
+                    <img src="{{asset('images/why to choose us/tools.jpg')}}" alt="">
                 </div>
             </div>
         </div>
-    </center>
+    </div>
+</section>
 
 
 @endsection

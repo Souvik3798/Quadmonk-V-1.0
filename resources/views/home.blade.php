@@ -55,6 +55,64 @@
             </div>
         </div>
     </form>
+
+
+
+
+    <form action="{{url('quatation')}}" method="POST">
+        <div class="modal fade" id="get-quatation" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Get Quotation</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container mt-2 mb-4">
+                            <div class="row justify-content-center align-items-center">
+                                <center><img src="{{asset('images/logo.png')}}" alt="" style="width: 120px;"></center>
+                                <div class="col-md-12">
+
+                                    <div class="mb-3 ">
+                                        <label for="exampleFormControlInput1 " class="form-label ">Name</label>
+                                        <input type="text " name="name" class="form-control c-text" id="exampleFormControlInput1 " placeholder="Enter Your Name " required>
+                                    </div>
+                                    <div class="mb-3 ">
+                                        <label for="exampleFormControlInput1 " class="form-label ">Email address</label>
+                                        <input type="email " name="email" class="form-control c-text " id="exampleFormControlInput1 " placeholder="yourid@example.com " required>
+                                    </div>
+                                    <div class="mb-3 ">
+                                        <label for="exampleFormControlInput1 " class="form-label ">Phone Number</label>
+                                        <input type="text " name="phone" class="form-control c-text " id="exampleFormControlInput1 " placeholder="9933XXXX45 " required>
+                                    </div>
+                                   <div class="mb-3 " id="quatation">
+                                        <label for="exampleFormControlInput1 " class="form-label ">Plan</label>
+                                        <select name="plan" class="form-control c-text " id="exampleFormControlInput1 " required>
+                                            <option value="">Select Plan</option>
+                                            <option value="Basic Plan">Basic Plan</option>
+                                            <option value="Business Plan">Business Plan</option>
+                                            <option value="Exclusive Plan">Exclusive Plan</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3 ">
+                                        <label for="exampleFormControlInput1 " class="form-label ">Quatation</label>
+                                        <input type="text " name="quatation" class="form-control c-text" id="exampleFormControlInput1 " placeholder="Quation for..? " required>
+                                    </div>
+                                    <div class="mb-1 ">
+                                        <center><button type="submit " class="btn mt-4 btn-primary btn-rounded">Submit your Quotation</button></center>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+
+
     <!-- The social media icon bar -->
     <div class="icon-bar">
         <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
@@ -77,24 +135,26 @@
 
             <div class="carousel-inner ">
                 <div class="carousel-item active">
-                    <img src="https://thumbs.dreamstime.com/b/cybersecurity-global-network-information-technology-security-services-internet-154742479.jpg" class="custom-img" alt="...">
+                    <video src="images/vid2.mp4" autoplay loop muted style=" width:100%;" alt="..."></video>
                     <div class="carousel-caption">
-                        <h5 style="text-shadow: 2px 2px 8px #000000;">Next-generation Technology</h5>
-                        <p style="text-shadow: 2px 2px 8px #000000;">Best for Web & App Technology in Town</p>
+                        <h5 class="">Next-generation Technology</h5>
+                        <p class="">Best for Web & App Technology in Town</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="https://thumbs.dreamstime.com/b/internet-information-technology-businessman-hand-showing-concept-75784736.jpg" class="custom-img" alt="...">
+                    <video src="images/vid6.mp4" autoplay loop muted style=" width:100%;" alt="..."></video>
+
                     <div class="carousel-caption ">
-                        <h5 style="text-shadow: 2px 2px 8px #000000;">Best-in-Service</h5>
-                        <p style="text-shadow: 2px 2px 8px #000000;">Best service in Town with awesome rating</p>
+                        <h5>Best-in-Service</h5>
+                        <p>Best service in Town with awesome rating</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="https://thumbs.dreamstime.com/b/technical-support-center-customer-service-business-concept-154147567.jpg" class="custom-img" alt="...">
+                    <video src="images/vid5.mp4" autoplay loop muted style=" width:100%;" alt="..."></video>
+
                     <div class="carousel-caption">
-                        <h5 style="text-shadow: 2px 2px 8px #000000;">Top-notch Support</h5>
-                        <p style="text-shadow: 2px 2px 8px #000000;">Real-time & local service anythime</p>
+                        <h5>Top-notch Support</h5>
+                        <p>Real-time & local service anythime</p>
                     </div>
                 </div>
             </div>
@@ -233,218 +293,246 @@
     <!-- end of services section -->
 
 
-    <section id="services" class="ourservices">
-        <h2 class="mt-5 mb-5 text-center">Build your Digital Presence with us</h2>
-        <div class="container ">
-            <div class="row row-cols-xs-2 row-cols-sm-3 row-cols-md-6 justify-content-center  gy-2">
-                <div class="col">
-                    <div class="card c-border " style="width: 9rem; ">
-                        <div class="card-body">
-                            <h5 class="card-title text-center "><i class="fa-solid fa-microphone-lines "></i></h5>
-                            <h6 class="card-subtitle mb-2 text-center ">Good Listner</h6>
-                            <p class="card-text text-center ">Will take your requirement seriouly.</p>
-                        </div>
+    <section class="container pt-3 mb-3" id="services">
+
+        <h2 class="mt-5 mb-5 text-center ">Build your Digital Presence with us</h2>
+        <div class="row pt-5 mt-30">
+            <div class="col-lg-4 col-sm-6 mb-5 pb-5">
+                <a class="service-card" href="#">
+                    <div class="box-shadow-service bg-white rounded-circle mx-auto text-center" style="width: 90px; height: 90px; margin-top: -45px;"><i class="fa-solid fa-microphone-lines fa-3x head-icon"></i></div>
+                    <div class="card-body text-center">
+                        <h3 class="card-title-service pt-1 ">Good Listner</h3>
+                        <p class="card-text-service text-sm-service">Will take your requirement seriously.</p>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card c-border " style="width: 9rem; ">
-                        <div class="card-body ">
-                            <h5 class="card-title text-center "><i class="fa-solid fa-mobile-screen-button "></i></h5>
-                            <h6 class="card-subtitle mb-2 text-center ">Moble Apps</h6>
-                            <p class="card-text text-center ">Static, Dynamic or Semi-dynamic all we can do.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card c-border " style="width: 9rem; ">
-                        <div class="card-body ">
-                            <h5 class="card-title text-center "><i class="fa-solid fa-globe "></i></h5>
-                            <h6 class="card-subtitle mb-2 text-center ">Website</h6>
-                            <p class="card-text text-center ">Static, Dynamic or Semi-dynamic all we can do.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card c-border " style="width: 9rem; ">
-                        <div class="card-body ">
-                            <h5 class="card-title text-center "><i class="fa-solid fa-pen-clip "></i></h5>
-                            <h6 class="card-subtitle mb-2 text-center ">Best Designs</h6>
-                            <p class="card-text text-center ">Best-in-class designs for you App and Websites.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card c-border " style="width: 9rem; ">
-                        <div class="card-body ">
-                            <h5 class="card-title text-center "><i class="fa-solid fa-magnifying-glass "></i></h5>
-                            <h6 class="card-subtitle mb-2 text-center ">SEO Friendly</h6>
-                            <p class="card-text text-center ">SEO friendly contents.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card c-border " style="width: 9rem; ">
-                        <div class="card-body ">
-                            <h5 class="card-title text-center "><i class="fa-solid fa-file-pen "></i></h5>
-                            <h6 class="card-subtitle mb-2 text-center ">Real-Time Updates</h6>
-                            <p class="card-text text-center ">Maintenance, Remote Support & much more.</p>
-                        </div>
-                    </div>
-                </div>
+                </a>
             </div>
-
-        </div>
-    </section>
-
-    <section class="premium-services">
-        <h2 class="mt-5 text-center">Premium services with Awesome support</h2>
-        <p class="text-center">We develop Best-in-class Service with User Friendly, Robust, <br>Reliable & Efficient products.</p>
-        <div class="container mt-5">
-            <div class="row  justify-content-center gy-3 ">
-                <div class="col-md-3 ">
-                    <div class="card ">
-                        <i class="fa-solid fa-laptop-code text-center mt-4 "></i>
-                        <div class="card-body ">
-                            <h5 class="card-title text-center ">Best UI/UX Design</h5>
-                            <p class="card-text mt-3 ">We have the best Graphic Designers in town, so UI/UX designs will the best you can think of, All your worries are over now will take care of your all deigning needs with the best technological partners we will viral your brand.
-                                provide latest designs.</p>
-                        </div>
+            <div class="col-lg-4 col-sm-6 mb-5 pb-5">
+                <a class="service-card" href="#">
+                    <div class="box-shadow-service bg-white rounded-circle mx-auto text-center" style="width: 90px; height: 90px; margin-top: -45px;"><i class="fa-solid fa-mobile-screen-button fa-3x head-icon"></i></div>
+                    <div class="card-body text-center">
+                        <h3 class="card-title-service pt-1">Mobile Apps</h3>
+                        <p class="card-text-service text-sm-service">Static, Dynamic or Semi-dynamic all we can do.</p>
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <i class="fa-solid fa-person-chalkboard text-center mt-4 "></i>
-                        <div class="card-body ">
-                            <h5 class="card-title text-center ">Beautiful Presentation</h5>
-                            <p class="card-text mt-3 ">Appearance & Presentation is the first impression for your customer, let us bring the #WowFactor in your brand and shine among others, with the best Developers, Content Writers, Graphic Designers and Professionals we will Present
-                                you in the Best Possible Way.</p>
-                        </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-5 pb-5">
+                <a class="service-card" href="#">
+                    <div class="box-shadow-service bg-white rounded-circle mx-auto text-center" style="width: 90px; height: 90px; margin-top: -45px;"><i class="fa-solid fa-globe fa-3x head-icon"></i></div>
+                    <div class="card-body text-center">
+                        <h3 class="card-title-service pt-1">Website</h3>
+                        <p class="card-text-service text-sm-service">Static, Dynamic or Semi-dynamic all we can do.</p>
                     </div>
-                </div>
-                <div class="col-md-3 ">
-                    <div class="card ">
-                        <i class="fa-brands fa-searchengin text-center mt-4 "></i>
-                        <div class="card-body ">
-                            <h5 class="card-title text-center ">SEO & Analytics</h5>
-                            <p class="card-text mt-3 ">SEO, SEM & Analytics all @ most affordable rates that anyone can afford, get reports on everything what we do for you, convert you leads into customers & the best ideas to boost your business. “Data is Money” we will help you
-                                to earn more Data.</p>
-                        </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-5 pb-5">
+                <a class="service-card" href="#">
+                    <div class="box-shadow-service bg-white rounded-circle mx-auto text-center" style="width: 90px; height: 90px; margin-top: -45px;"><i class="fa-solid fa-pen-clip fa-3x head-icon"></i></div>
+                    <div class="card-body text-center">
+                        <h3 class="card-title-service pt-1">Best Designs</h3>
+                        <p class="card-text-service text-sm-service">Best-in-class designs for you App and Websites.</p>
                     </div>
-                </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-5 pb-5">
+                <a class="service-card" href="#">
+                    <div class="box-shadow-service bg-white rounded-circle mx-auto text-center" style="width: 90px; height: 90px; margin-top: -45px;"><i class="fa-solid fa-magnifying-glass fa-3x head-icon"></i></div>
+                    <div class="card-body text-center">
+                        <h3 class="card-title-service pt-1">SEO Friendly</h3>
+                        <p class="card-text-service text-sm-service">SEO friendly contents.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-5 pb-5">
+                <a class="service-card" href="#">
+                    <div class="box-shadow-service bg-white rounded-circle mx-auto text-center" style="width: 90px; height: 90px; margin-top: -45px;"><i class="fa-solid fa-file-pen fa-3x head-icon"></i></div>
+                    <div class="card-body text-center">
+                        <h3 class="card-title-service pt-1">Real-Time Updates</h3>
+                        <p class="card-text-service text-sm-service">Maintenance, Remote Support & much more.</p>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
+    <section class="we-offer-area text-center bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="site-heading text-center">
+                        <h2><span>Premium services</span> with Awesome support</h2>
+                        <h4>We develop Best-in-class Service with User Friendly, Robust, <br>Reliable & Efficient products.</h4>
+                    </div>
+                </div>
+            </div>
+                <div class="row our-offer-items less-carousel">
+                    <!-- Single Item -->
+                    <div class="col-md-4 col-sm-6 equal-height">
+                        <div class="item">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <h4>Best UI/UX Design</h4>
+                            <p>
+                                We have the best Graphic Designers in town, so UI/UX designs will the best you can think of, All your worries are over now will take care of your all deigning needs with the best technological partners we will viral your brand. Provide latest designs.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+
+                    <!-- Single Item -->
+                    <div class="col-md-4 col-sm-6 equal-height">
+                        <div class="item">
+                            <i class="fa-solid fa-person-chalkboard"></i>
+                            <h4>Beautiful Presentation</h4>
+                            <p>
+                                Appearance & Presentation is the first impression for our customers,
+                                we bring the #WowFactor in your brand and shine among others, with the best Developers, Content Writers, and Professionals, we will Present you in the Best Possible Way.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+
+                    <!-- Single Item -->
+                    <div class="col-md-4 col-sm-6 equal-height">
+                        <div class="item">
+                            <i class="fa-brands fa-searchengin"></i>
+                            <h4>SEO & Analytics</h4>
+                            <p>
+                                SEO, SEM & Analytics all @ most affordable rates that anyone can afford, get reports on everything what we do for you, convert your leads into customers & the best ideas to boost your business. “Data is Money” we will help you
+                                to earn more Data.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+        </div>
+    </section>
+
 
     <section class="clients">
         <h2 class="mt-5 text-center">Our Awesome Clients</h2>
         <p class="text-center">We have had a amazing journey with our Clients that brings us to <br>where we are stands today.</p>
-        <div class="container mt-5">
-            <div class="row justify-content-center">
-                <div class="owl-carousel owl-theme">
+        <div class="carousel-wrap">
+            <div class="owl-carousel">
 
-                    @foreach ($portfolios as $portfolio)
+                @foreach ($portfolios as $portfolio)
 
-                        <div class="item mb-1">
-                            <div class="card border-0 shadow">
-                                <img src="public/portfolioimg/{{$portfolio->Image}}" alt="client-image" class="card-img-top">
-                            </div>
-                        </div>
-                        <!-- item end -->
-
-                    @endforeach
-
-
+                <div class="item mb-1">
+                    <div class="card border-0 shadow">
+                        <img src="public/portfolioimg/{{$portfolio->Image}}" alt="client-image" class="card-img-top">
+                    </div>
                 </div>
+                <!-- item end -->
+
+            @endforeach
             </div>
-        </div>
+          </div>
     </section>
 
-    <section id="pricing" class="plans">
+    <div class="demo" id="pricing">
+
         <h2 class="mt-5 text-center">Best of our Plans that will suite your budget.</h2>
-        <p class="text-center">We providing the best plans that are value for money</p>
-        <div class="container mt-5">
-            <div class="row  justify-content-center gy-3 ">
-                <div class="col-md-3 ">
-                    <div class="card">
-                        <p class="text-center mt-2">Basic Plan</p>
-                        <h1 class="text-center">&#8377;&nbsp;15K</h1>
-                        <div class="card-body">
-                            <p class="card-text mt-3 mb-2 "><i class="fa-solid fa-xmark"></i>&nbsp;&nbsp;10 Dynamic Pages (Max)</p>
-                            <p class="card-text mt-3 mb-2 "><i class="fa-solid fa-check"></i>&nbsp;&nbsp;7 Static Pages(Max) </p>
-                            <p class="card-text mt-3 mb-2 "><i class="fa-solid fa-check"></i>&nbsp;&nbsp;Contact us Page(Semi-dynamic)</p>
-                            <p class="card-text mt-3 mb-2 "><i class="fa-solid fa-xmark"></i>&nbsp;&nbsp;Free Consultation</p>
-                            <p class="card-text mt-3 mb-2 "><i class="fa-solid fa-check"></i>&nbsp;&nbsp; SSD Hosting for 1yr </p>
-                            <p class="card-text mt-3 mb-2 "><i class="fa-solid fa-check"></i>&nbsp;&nbsp; Domain for 1yr </p>
-                            <p class="card-text mt-3 mb-2 "><i class="fa-solid fa-check"></i>&nbsp;&nbsp; Social Media Handles Creation </p>
-                            <p class="card-text mt-3 mb-2 "><i class="fa-solid fa-check"></i>&nbsp;&nbsp; Email Id Creation </p>
-                            <p class="card-text mt-3 mb-2 "><i class="fa-solid fa-check"></i>&nbsp;&nbsp; 6 months Technical Support </p>
-                            <p class="card-text mt-3 mb-2 "><i class="fa-solid fa-xmark"></i>&nbsp;&nbsp; Free Logo </p>
-                            <p class="card-text mt-3 mb-2 "><i class="fa-solid fa-xmark"></i>&nbsp;&nbsp; Free Content Writing </p>
-                            <p class="card-text mt-3 mb-2 "><i class="fa-solid fa-xmark"></i>&nbsp;&nbsp; Free Business Card (100pcs)</p>
-                            <p class="card-text mt-3 mb-2 "><i class="fa-solid fa-xmark"></i>&nbsp;&nbsp; Free Organic Marketing (1 month)</p>
-                            <center><button type="submit" class="btn mt-4" data-bs-toggle="modal" data-bs-target="#get-quatation">GET QUATATION</button></center>
+        <p class="text-center mb-5">We providing the best plans that are value for money</p>
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <div class="pricingTable blue">
+                        <div class="pricingTable-header mb-3">
+                            <i class="fa fa-adjust"></i>
+                            <div class="price-value"> <span style="font-size: 23px;">&#8377;</span> 15000<span style="font-size: 23px;">.00</span>  <span class="month">per month</span> </div>
+                        </div>
+                        <h3 class="heading">Basic</h3>
+                        <span class="badge bg-info d-inline-block mb-3">FIXED</span>
+                        <div class="pricing-content">
+                            <ul>
+                                <li><i class="far-x fa-regular fa-circle-xmark"></i><b>10</b> Dynamic Pages (Max)</li>
+                                <li><i class="far fa-check-circle"></i><b>7</b> Static Pages(Max)</li>
+                                <li><i class="far fa-check-circle"></i>Contact us Page(Semi-dynamic)</li>
+                                <li><i class="far-x fa-regular fa-circle-xmark"></i>Free Consultation</li>
+                                <li><i class="far fa-check-circle"></i>SSD Hosting for 1yr</li>
+                                <li><i class="far fa-check-circle"></i>Domain for 1yr</li>
+                                <li><i class="far fa-check-circle"></i>Social Media Handles Creation</li>
+                                <li><i class="far fa-check-circle"></i>Email Id Creation</li>
+                                <li><i class="far fa-check-circle"></i><b>6</b> months Technical Support</li>
+                                <li><i class="far-x fa-regular fa-circle-xmark"></i>Free Logo</li>
+                                <li><i class="far-x fa-regular fa-circle-xmark"></i>Free Content Writing</li>
+                                <li><i class="far-x fa-regular fa-circle-xmark"></i>Free Business Card (100pcs)</li>
+                                <li><i class="far-x fa-regular fa-circle-xmark"></i>Free Organic Marketing (1 month)</li>
+                            </ul>
+                        </div>
+                        <div class="pricingTable-signup">
+                            <a id="basic" data-bs-toggle="modal" data-bs-target="#get-quatation" >GET Quotation</a>
                         </div>
                     </div>
                 </div>
-                <!-- end of card -->
-                <div class="col-md-3 ">
-                    <div class="card">
-                        <p class="text-center mt-2">Business Plan</p>
-                        <h1 class="text-center">&#8377;&nbsp;20K</h1>
-                        <div class="card-body">
-                            <p class="card-text mt-3 mb-2 "><i class="fa-solid fa-check"></i>&nbsp;&nbsp;5 Dynamic Pages (Max) </p>
-                            <p class="card-text mt-3 mb-2 "><i class="fa-solid fa-check"></i>&nbsp;&nbsp;4 Static Pages(Max) </p>
-                            <p class="card-text mt-3 mb-2 "><i class="fa-solid fa-check"></i>&nbsp;&nbsp;Contact us Page(Semi-dynamic)</p>
-                            <p class="card-text mt-3 mb-2 "><i class="fa-solid fa-check"></i>&nbsp;&nbsp;Free Consultation </p>
-                            <p class="card-text mt-3 mb-2 "><i class="fa-solid fa-check"></i>&nbsp;&nbsp;SSD Hosting for 1yr </p>
-                            <p class="card-text mt-3 mb-2 "> <i class="fa-solid fa-check"></i>&nbsp;&nbsp;Domain for 1yr </p>
-                            <p class="card-text mt-3 mb-2 "><i class="fa-solid fa-check"></i>&nbsp;&nbsp;Social Media Handles Creation </p>
-                            <p class="card-text mt-3 mb-2 "><i class="fa-solid fa-check"></i>&nbsp;&nbsp;Email Id Creation </p>
-                            <p class="card-text mt-3 mb-2 "><i class="fa-solid fa-check"></i>&nbsp;&nbsp;9 months Technical Support </p>
-                            <p class="card-text mt-3 mb-2 "> <i class="fa-solid fa-xmark"></i>&nbsp;&nbsp;Free Logo </p>
-                            <p class="card-text mt-3 mb-2 "><i class="fa-solid fa-xmark"></i>&nbsp;&nbsp;Free Content Writing </p>
-                            <p class="card-text mt-3 mb-2 "><i class="fa-solid fa-xmark"></i>&nbsp;&nbsp;Free Business Card (100pcs)</p>
-                            <p class="card-text mt-3 mb-2 "><i class="fa-solid fa-xmark"></i>&nbsp;&nbsp;Free Organic Marketing (1month)</p>
-                            <center><button type="submit" class="btn mt-4" data-bs-toggle="modal" data-bs-target="#get-quatation">GET QUATATION</button></center>
+
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <div class="pricingTable blue">
+                        <div class="pricingTable-header mb-3">
+                            <i class="fa fa-briefcase"></i>
+                            <div class="price-value"> <span style="font-size: 23px;">&#8377;</span> 20000<span style="font-size: 23px;">.00</span> <span class="month">per month</span> </div>
+                        </div>
+                        <h3 class="heading">Business</h3>
+                        <span class="badge bg-info d-inline-block mb-3">FIXED</span>
+                        <div class="pricing-content">
+                            <ul>
+                                <li><i class="far fa-check-circle"></i><b>10</b> Dynamic Pages (Max)</li>
+                                <li><i class="far fa-check-circle"></i><b>7</b> Static Pages(Max)</li>
+                                <li><i class="far fa-check-circle"></i>Contact us Page(Semi-dynamic)</li>
+                                <li><i class="far fa-check-circle"></i>Free Consultation</li>
+                                <li><i class="far fa-check-circle"></i>SSD Hosting for 1yr</li>
+                                <li><i class="far fa-check-circle"></i>Domain for 1yr</li>
+                                <li><i class="far fa-check-circle"></i>Social Media Handles Creation</li>
+                                <li><i class="far fa-check-circle"></i>Email Id Creation</li>
+                                <li><i class="far fa-check-circle"></i><b>6</b> months Technical Support</li>
+                                <li><i class="far-x fa-regular fa-circle-xmark"></i>Free Logo</li>
+                                <li><i class="far-x fa-regular fa-circle-xmark"></i>Free Content Writing</li>
+                                <li><i class="far-x fa-regular fa-circle-xmark"></i>Free Business Card (100pcs)</li>
+                                <li><i class="far-x fa-regular fa-circle-xmark"></i>Free Organic Marketing (1 month)</li>
+                            </ul>
+                        </div>
+                        <div class="pricingTable-signup">
+                            <a data-bs-toggle="modal" data-bs-target="#get-quatation" id="business" >GET Quotation</a>
                         </div>
                     </div>
                 </div>
-                <!-- end of card -->
-                <div class="col-md-3 ">
-                    <div class="card">
-                        <p class="text-center mt-2">Exclusive Plan &nbsp;&nbsp;<span class="c-text">&nbsp;CUSTOMISEABLE PLAN&nbsp;</span></p>
-                        <h1 class="text-center">&#8377;&nbsp;30K</h1>
-                        <div class="card-body">
-                            <p class="card-text mt-3 mb-2 "><i class="fa-solid fa-check"></i>&nbsp;&nbsp;10 Dynamic Pages (Max) </p>
-                            <p class="card-text mt-3 mb-2 "><i class="fa-solid fa-check"></i>&nbsp;&nbsp;4 Static Pages(Max) </p>
-                            <p class="card-text mt-3 mb-2 "><i class="fa-solid fa-check"></i>&nbsp;&nbsp;Contact us Page(Semi-dynamic)</p>
-                            <p class="card-text mt-3 mb-2 "><i class="fa-solid fa-check"></i>&nbsp;&nbsp;Free Consultation </p>
-                            <p class="card-text mt-3 mb-2 "><i class="fa-solid fa-check"></i>&nbsp;&nbsp;SSD Hosting for 1yr </p>
-                            <p class="card-text mt-3 mb-2 "><i class="fa-solid fa-check"></i>&nbsp;&nbsp;Domain for 1yr </p>
-                            <p class="card-text mt-3 mb-2 "><i class="fa-solid fa-check"></i>&nbsp;&nbsp;Social Media Handles Creation </p>
-                            <p class="card-text mt-3 mb-2 "><i class="fa-solid fa-check"></i>&nbsp;&nbsp;Email Id Creation </p>
-                            <p class="card-text mt-3 mb-2 "><i class="fa-solid fa-check"></i>&nbsp;&nbsp;1 yr Technical Support </p>
-                            <p class="card-text mt-3 mb-2 "><i class="fa-solid fa-check"></i>&nbsp;&nbsp;Free Logo </p>
-                            <p class="card-text mt-3 mb-2 "><i class="fa-solid fa-check"></i>&nbsp;&nbsp;Free Content Writing </p>
-                            <p class="card-text mt-3 mb-2 "><i class="fa-solid fa-check"></i>&nbsp;&nbsp;Free Business Card (100pcs) </p>
-                            <p class="card-text mt-3 mb-2 "><i class="fa-solid fa-check"></i>&nbsp;&nbsp;Free Organic Marketing (1month)</p>
-                            <center><button type="submit" class="btn mt-4" data-bs-toggle="modal" data-bs-target="#get-quatation">GET QUATATION</button></center>
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <div class="pricingTable blue">
+                        <div class="pricingTable-header mb-3">
+                            <i class="fa fa-diamond"></i>
+                            <div class="price-value"> <span style="font-size: 23px;">&#8377;</span> 30000<span style="font-size: 23px;">.00</span> <span class="month">per month</span> </div>
+                        </div>
+                        <h3 class="heading">Exclusive </h3>
+                        <span class="badge bg-warning d-inline-block mb-3">CUSTOMISEABLE</span>
+                        <div class="pricing-content">
+                            <ul>
+                                <li><i class="far fa-check-circle"></i><b>10</b> Dynamic Pages (Max)</li>
+                                <li><i class="far fa-check-circle"></i><b>7</b> Static Pages(Max)</li>
+                                <li><i class="far fa-check-circle"></i>Contact us Page(Semi-dynamic)</li>
+                                <li><i class="far fa-check-circle"></i>Free Consultation</li>
+                                <li><i class="far fa-check-circle"></i>SSD Hosting for 1yr</li>
+                                <li><i class="far fa-check-circle"></i>Domain for 1yr</li>
+                                <li><i class="far fa-check-circle"></i>Social Media Handles Creation</li>
+                                <li><i class="far fa-check-circle"></i>Email Id Creation</li>
+                                <li><i class="far fa-check-circle"></i><b>6</b> months Technical Support</li>
+                                <li><i class="far fa-check-circle"></i>Free Logo</li>
+                                <li><i class="far fa-check-circle"></i>Free Content Writing</li>
+                                <li><i class="far fa-check-circle"></i>Free Business Card (100pcs)</li>
+                                <li><i class="far fa-check-circle"></i>Free Organic Marketing (1 month)</li>
+                            </ul>
+                        </div>
+                        <div class="pricingTable-signup">
+                            <a data-bs-toggle="modal" data-bs-target="#get-quatation" id="exclusive">GET Quotation</a>
                         </div>
                     </div>
                 </div>
-                <!-- end of card -->
+
             </div>
         </div>
-    </section>
+    </div>
     <section id="about" class="about">
         <div class="container">
             <div class="row">
                 <div class=" mt-5 ">
-                    <div class="card c-border ">
-                        <div class="card-body">
-                            <p class="text-center">A Technology Company that can produce anything for your technical needs. We are a startup company currenty in intial phase and can produce anything for your technical needs, We have Experienced & Award Winning Developers with
-                                the best Mentors in the islands.</p>
-                        </div>
+                    <div class="alert alert-info container text-center" role="alert">
+                        A Technology Company that can produce anything for your technical needs. We are a startup company currenty in intial phase and can produce anything for your technical needs, We have Experienced & Award Winning Developers with
+                        the best Mentors in the islands.
                     </div>
                 </div>
             </div>
@@ -456,6 +544,9 @@
                 <div class=" col-md-6 ">
                     <h1>Request a callback</h1>
                     <p class="mt-3">Great things in business are never done one. They're done by a team of people. For Collab, Promotion or Mega Projects Pls request call back will get back to you soon</p>
+                    <div class="text-center justify-content-center">
+                        <img src="{{asset('images/logo.png')}}" alt="" style="width: 400px; padding-right: 100px;">
+                    </div>
                 </div>
                 <form method="POST" action="contact" class="col-md-6 mt-5 ">
                     @csrf
