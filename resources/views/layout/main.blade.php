@@ -138,7 +138,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="devinfo text-center">
-                    <p class="text-white mt-2"> &#169;2021 Made with &hearts; by QuadMonk V1.0</p>
+                    <p class="text-white mt-2"> &#169;2022 Made with &hearts; by QuadMonk V1.0</p>
                 </div>
             </div>
         </div>

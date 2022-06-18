@@ -3,58 +3,13 @@
 @section('content')
 
     <!--get quation  Modal for pricing section -->
+
+
+
+
+
     <form action="{{url('quatation')}}" method="POST">
         @csrf
-        <div class="modal fade" id="get-quatation" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Get Quatation</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="container mt-5 mb-4">
-                            <div class="row justify-content-center align-items-center">
-                                <div class="col-md-12">
-                                    <div class="mb-3 ">
-                                        <label for="exampleFormControlInput1 " class="form-label ">Name</label>
-                                        <input type="text " name="name" class="form-control c-text" id="exampleFormControlInput1 " placeholder="Enter Your Name " required>
-                                    </div>
-                                    <div class="mb-3 ">
-                                        <label for="exampleFormControlInput1 " class="form-label ">Email address</label>
-                                        <input type="email " name="email" class="form-control c-text " id="exampleFormControlInput1 " placeholder="yourid@example.com " required>
-                                    </div>
-                                    <div class="mb-3 ">
-                                        <label for="exampleFormControlInput1 " class="form-label ">Phone Number</label>
-                                        <input type="text " name="phone" class="form-control c-text " id="exampleFormControlInput1 " placeholder="9933XXXX45 " required>
-                                    </div>
-                                    <div class="mb-3 " id="quotation">
-                                        <label for="exampleFormControlInput1 " class="form-label ">Quotation</label>
-                                        <input type="text " name="plan" class="form-control c-text" readonly>
-                                    </div>
-                                    <div class="mb-3 ">
-                                        <label for="exampleFormControlInput1 " class="form-label ">Quatation</label>
-                                        <input type="text " name="quatation" class="form-control c-text" id="exampleFormControlInput1 " placeholder="Quation for..? " required>
-                                    </div>
-                                    <div class="mb-3 ">
-                                        <center><button type="submit " class="btn mt-4 ">Submit your Quatation</button></center>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div> -->
-                </div>
-            </div>
-        </div>
-    </form>
-
-
-
-
-    <form action="{{url('quatation')}}" method="POST">
         <div class="modal fade" id="get-quatation" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -80,14 +35,9 @@
                                         <label for="exampleFormControlInput1 " class="form-label ">Phone Number</label>
                                         <input type="text " name="phone" class="form-control c-text " id="exampleFormControlInput1 " placeholder="9933XXXX45 " required>
                                     </div>
-                                   <div class="mb-3 " id="quatation">
-                                        <label for="exampleFormControlInput1 " class="form-label ">Plan</label>
-                                        <select name="plan" class="form-control c-text " id="exampleFormControlInput1 " required>
-                                            <option value="">Select Plan</option>
-                                            <option value="Basic Plan">Basic Plan</option>
-                                            <option value="Business Plan">Business Plan</option>
-                                            <option value="Exclusive Plan">Exclusive Plan</option>
-                                        </select>
+                                    <div class="mb-3 " id="quotation">
+                                        <label for="exampleFormControlInput1 " class="form-label ">Quotation</label>
+                                        <input type="text " name="plan" class="form-control c-text" readonly>
                                     </div>
                                     <div class="mb-3 ">
                                         <label for="exampleFormControlInput1 " class="form-label ">Quatation</label>
@@ -591,9 +541,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js " integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
     <!-- owl carousel initiate -->
     <script type="text/javascript">
-        var inputBasic = '<label for="exampleFormControlInput1 " class="form-label ">Quotation</label> <input type="text " value="Basic Plan" class="form-control c-text" readonly>'
-        var inputBusi = '<label for="exampleFormControlInput1 " class="form-label ">Quotation</label> <input type="text " value="Business Plan" class="form-control c-text" readonly>'
-        var inputExclu = '<label for="exampleFormControlInput1 " class="form-label ">Quotation</label> <input type="text " value="Exclusive Plan" class="form-control c-text" readonly>'
+        var inputBasic = '<label for="exampleFormControlInput1 " class="form-label ">Quotation</label> <input type="text " name="plan" value="Basic Plan" class="form-control c-text" readonly>'
+        var inputBusi = '<label for="exampleFormControlInput1 " class="form-label ">Quotation</label> <input type="text " name="plan" value="Business Plan" class="form-control c-text" readonly>'
+        var inputExclu = '<label for="exampleFormControlInput1 " class="form-label ">Quotation</label> <input type="text " name="plan" value="Exclusive Plan" class="form-control c-text" readonly>'
 
 
        $("#basic").click(function () {
