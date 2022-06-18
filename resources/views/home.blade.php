@@ -28,14 +28,9 @@
                                         <label for="exampleFormControlInput1 " class="form-label ">Phone Number</label>
                                         <input type="text " name="phone" class="form-control c-text " id="exampleFormControlInput1 " placeholder="9933XXXX45 " required>
                                     </div>
-                                    <div class="mb-3 ">
-                                        <label for="exampleFormControlInput1 " class="form-label ">Plan</label>
-                                        <select name="plan" class="form-control c-text " id="exampleFormControlInput1 " required>
-                                            <option value="">Select Plan</option>
-                                            <option value="Basic Plan">Basic Plan</option>
-                                            <option value="Business Plan">Business Plan</option>
-                                            <option value="Exclusive Plan">Exclusive Plan</option>
-                                        </select>
+                                    <div class="mb-3 " id="quotation">
+                                        <label for="exampleFormControlInput1 " class="form-label ">Quotation</label>
+                                        <input type="text " name="plan" class="form-control c-text" readonly>
                                     </div>
                                     <div class="mb-3 ">
                                         <label for="exampleFormControlInput1 " class="form-label ">Quatation</label>
@@ -115,10 +110,10 @@
 
     <!-- The social media icon bar -->
     <div class="icon-bar">
-        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-        <a href="#" class="google"><i class="fa fa-instagram"></i></a>
-        <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+        <a href="https://ne-np.facebook.com/watch/QuadMonkSolutions" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/quadmonk" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com/quadmonk" class="google"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UC-c6-IzJRdLRv41n2iecd_w" class="youtube"><i class="fa fa-youtube"></i></a>
     </div>
 
 
@@ -595,37 +590,59 @@
     <!-- carousel min.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js " integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
     <!-- owl carousel initiate -->
-    <script>
-        $('.owl-carousel').owlCarousel({
-            loop: true,
-            margin: 10,
-            nav: true,
-            responsive: {
-                0: {
-                    items: 3
-                },
-                600: {
-                    items: 3
-                },
-                1000: {
-                    items: 5
-                }
-            }
-        })
-    </script>
+    <script type="text/javascript">
+        var inputBasic = '<label for="exampleFormControlInput1 " class="form-label ">Quotation</label> <input type="text " value="Basic Plan" class="form-control c-text" readonly>'
+        var inputBusi = '<label for="exampleFormControlInput1 " class="form-label ">Quotation</label> <input type="text " value="Business Plan" class="form-control c-text" readonly>'
+        var inputExclu = '<label for="exampleFormControlInput1 " class="form-label ">Quotation</label> <input type="text " value="Exclusive Plan" class="form-control c-text" readonly>'
+
+
+       $("#basic").click(function () {
+           console.log("helklo")
+           $("#quotation").html(inputBasic);
+       });
+       $("#business").click(function () {
+           console.log("helklo")
+           $("#quotation").html(inputBusi);
+       });
+       $("#exclusive").click(function () {
+           console.log("helklo")
+           $("#quotation").html(inputExclu);
+       });
+  </script>
+  <!-- end of modal update script -->
+
+   <script>
+      $('.owl-carousel').owlCarousel({
+     loop: true,
+     margin: 10,
+      autoplay: true,
+      autoplayTimeout:1000,
+     autoplayHoverPause: true,
+     responsive: {
+        0: {
+            items: 1
+        },
+       600: {
+        items: 3
+       },
+       1000: {
+         items: 5
+        }
+      }
+    })
+   </script>
     <!-- typing animation script -->
+    @php
+        foreach($portfolios as $portfolio){
+            $name[] = $portfolio->Name;
+        }
+    @endphp
     <script>
         var speed = 200;
         var speed2 = 150;
         var str = document.getElementById('str');
         var i = 0;
         var isRemoving = false;
-
-        @php
-            foreach($portfolios as $portfolio){
-                $name[] = $portfolio->Name;
-            }
-        @endphp
 
         var messages = <?php
 

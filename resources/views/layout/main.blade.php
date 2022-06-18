@@ -112,17 +112,18 @@
                     <h5>Address</h5>
                     <p>Room No 202,Mahender Singh Building, beside Hotel Rajadeepam, Dollygunj, Port Blair,<br> Andaman and Nicobar Islands 744103</p>
                     <p>Phone:+91-9382217100</p>
-                    <p>Mail id: quadmonkpb@gmail.com</p>
+
                     <p class="px-5">&nbsp; support@quadmonk.com</p>
 
 
                 </div>
                 <div class="col-md-4 mt-5">
                     <h5>Follow Us</h5>
-                    <i class="fa-brands fa-facebook-square"></i>
-                    <i class="fa-brands fa-twitter-square"></i>
-                    <i class="fa-brands fa-instagram-square"></i>
-                    <i class="fa-brands fa-youtube-square"></i>
+                    <a href="https://ne-np.facebook.com/watch/QuadMonkSolutions" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
+                    <a href="https://twitter.com/quadmonk" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/quadmonk" target="_blank"><i class="fa-brands fa-instagram-square"></i></a>
+                    <a href="https://www.youtube.com/channel/UC-c6-IzJRdLRv41n2iecd_w" target="_blank"><i class="fa-brands fa-youtube-square"></i></a>
+                    <a href="https://in.linkedin.com/company/quadmonk-solutions" target="_blank"><i class="fa-brands fa-linkedin-square"></i></a>
                     <p>
                         <h5>Policy</h5>
                     </p>
