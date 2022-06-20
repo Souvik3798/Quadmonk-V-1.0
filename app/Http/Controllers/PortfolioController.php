@@ -12,7 +12,7 @@ class PortfolioController extends Controller
     }
 
     public function admin(Request $request){
-        if($request->Username == 'Quadmonk@123' && $request->password == '123'){
+        if($request->Username == 'Quadmonk@123' && $request->password == 'Quadmonk@2022'){
             $request->session()->put('quadmonk', 'Admin');
             return redirect('portfolio');
         }
