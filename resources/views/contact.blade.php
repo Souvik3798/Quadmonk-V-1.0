@@ -41,23 +41,23 @@
                     @csrf
                     <div class="mb-3 ">
                         <label for="exampleFormControlInput1 " class="form-label ">Name</label>
-                        <input type="text " name="name" class="form-control c-text" id="exampleFormControlInput1 " placeholder="Enter Your Name ">
+                        <input type="text " name="name" class="form-control c-text" id="exampleFormControlInput1 " placeholder="Enter Your Name " required>
                     </div>
                     <div class="mb-3 ">
                         <label for="exampleFormControlInput1 " class="form-label ">Email address</label>
-                        <input type="email " name="email" class="form-control c-text " id="exampleFormControlInput1 " placeholder="yourid@example.com ">
+                        <input type="email " name="email" class="form-control c-text " id="exampleFormControlInput1 " placeholder="yourid@example.com " required>
                     </div>
                     <div class="mb-3 ">
                         <label for="exampleFormControlInput1 " class="form-label ">Subject</label>
-                        <input type="email " name="subject" class="form-control c-text " id="exampleFormControlInput1 " placeholder="wanna make a website for my business... ">
+                        <input type="email " name="subject" class="form-control c-text " id="exampleFormControlInput1 " placeholder="wanna make a website for my business... " required>
                     </div>
                     <div class="mb-3 ">
                         <label for="exampleFormControlInput1 " class="form-label ">Phone Number</label>
-                        <input type="text " name="phone" class="form-control c-text " id="exampleFormControlInput1 " placeholder="9933XXXX45 ">
+                        <input type="text " name="phone" class="form-control c-text " id="exampleFormControlInput1 " placeholder="9933XXXX45 " required>
                     </div>
                     <div class="mb-3 ">
                         <label for="exampleFormControlTextarea1 " class="form-label ">Message</label>
-                        <textarea class="form-control c-text " name="message" id="exampleFormControlTextarea1 " placeholder="Type your message..! " rows="3 "></textarea>
+                        <textarea class="form-control c-text " name="message" id="exampleFormControlTextarea1 " placeholder="Type your message..! " rows="3 " required></textarea>
                     </div>
                     <div class="mb-3 ">
                         <center><button type="submit " class="btn mt-4 ">Send Your Message</button></center>

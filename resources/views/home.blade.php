@@ -36,7 +36,7 @@
                                         <input type="text " name="phone" class="form-control c-text " id="exampleFormControlInput1 " placeholder="9933XXXX45 " required>
                                     </div>
                                     <div class="mb-3 " id="quotation">
-                                        <label for="exampleFormControlInput1 " class="form-label ">Quotation</label>
+                                        <label for="exampleFormControlInput1 " class="form-label ">Plan</label>
                                         <input type="text " name="plan" class="form-control c-text" readonly>
                                     </div>
                                     <div class="mb-3 ">
@@ -497,23 +497,23 @@
                     @csrf
                     <div class="mb-3 ">
                         <label for="exampleFormControlInput1 " class="form-label ">Name</label>
-                        <input type="text " name="name" class="form-control c-text" id="exampleFormControlInput1 " placeholder="Enter Your Name ">
+                        <input type="text " name="name" class="form-control c-text" id="exampleFormControlInput1 " placeholder="Enter Your Name " required>
                     </div>
                     <div class="mb-3 ">
                         <label for="exampleFormControlInput1 " class="form-label ">Email address</label>
-                        <input type="email " name="email" class="form-control c-text " id="exampleFormControlInput1 " placeholder="yourid@example.com ">
+                        <input type="email " name="email" class="form-control c-text " id="exampleFormControlInput1 " placeholder="yourid@example.com " required>
                     </div>
                     <div class="mb-3 ">
                         <label for="exampleFormControlInput1 " class="form-label ">Subject</label>
-                        <input type="email " name="subject" class="form-control c-text " id="exampleFormControlInput1 " placeholder="wanna make a website for my business...">
+                        <input type="email " name="subject" class="form-control c-text " id="exampleFormControlInput1 " placeholder="wanna make a website for my business..." required>
                     </div>
                     <div class="mb-3 ">
                         <label for="exampleFormControlInput1 " class="form-label ">Phone Number</label>
-                        <input type="text " name="phone" class="form-control c-text " id="exampleFormControlInput1 " placeholder="9933XXXX45 ">
+                        <input type="text " name="phone" class="form-control c-text " id="exampleFormControlInput1 " placeholder="9933XXXX45 " required>
                     </div>
                     <div class="mb-3 ">
                         <label for="exampleFormControlTextarea1 " class="form-label ">Message</label>
-                        <textarea class="form-control c-text " name="message" id="exampleFormControlTextarea1 " placeholder="Type your message..! " rows="3 "></textarea>
+                        <textarea class="form-control c-text " name="message" id="exampleFormControlTextarea1 " placeholder="Type your message..! " rows="3 " required></textarea>
                     </div>
                     <div class="mb-3 ">
                         <center><button type="submit " class="btn mt-4 ">Send Your Message</button></center>
@@ -541,9 +541,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js " integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
     <!-- owl carousel initiate -->
     <script type="text/javascript">
-        var inputBasic = '<label for="exampleFormControlInput1 " class="form-label ">Quotation</label> <input type="text " name="plan" value="Basic Plan" class="form-control c-text" readonly>'
-        var inputBusi = '<label for="exampleFormControlInput1 " class="form-label ">Quotation</label> <input type="text " name="plan" value="Business Plan" class="form-control c-text" readonly>'
-        var inputExclu = '<label for="exampleFormControlInput1 " class="form-label ">Quotation</label> <input type="text " name="plan" value="Exclusive Plan" class="form-control c-text" readonly>'
+        var inputBasic = '<label for="exampleFormControlInput1 " class="form-label ">Plan</label> <input type="text " name="plan" value="Basic Plan" class="form-control c-text" readonly>'
+        var inputBusi = '<label for="exampleFormControlInput1 " class="form-label ">Plan</label> <input type="text " name="plan" value="Business Plan" class="form-control c-text" readonly>'
+        var inputExclu = '<label for="exampleFormControlInput1 " class="form-label ">Plan</label> <input type="text " name="plan" value="Exclusive Plan" class="form-control c-text" readonly>'
 
 
        $("#basic").click(function () {
