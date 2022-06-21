@@ -158,6 +158,14 @@
 
     <script src=" https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js " integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p " crossorigin="anonymous "></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js " integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF " crossorigin="anonymous "></script>
+    <script async src='https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js'></script>
+        <script>
+          var wa_btnSetting = {"btnColor":"#16BE45","ctaText":"WhatsApp Us","cornerRadius":40,"marginBottom":20,"marginLeft":20,"marginRight":20,"btnPosition":"right","whatsAppNumber":"+919382217100","welcomeMessage":"Hi,\n*Having trouble with your business?* or\n*Are you looking to upgrade your service?*\nThere are many ways that we can assist you.\nWe are happy to connect you with the right solution if you let us know more about your requirements.","zIndex":999999,"btnColorScheme":"light"};
+          var wa_widgetSetting = {"title":"QuadMonk Solutions","subTitle":"Typically replies in few hours","headerBackgroundColor":"#e0feef","headerColorScheme":"dark","greetingText":"Hi there,\nHaving trouble with your business? or\nAre you looking to upgrade your service?\nThere are many ways that we can assist you.\nWe are happy to connect you with the right solution if you let us know more about your requirements.","ctaText":"Get Solutions","btnColor":"#4ac402","cornerRadius":40,"welcomeMessage":"Hello","btnColorScheme":"light","brandImage":"https://www.quadmonk.com/images/logo.png","darkHeaderColorScheme":{"title":"#333333","subTitle":"#4F4F4F"}};
+          window.onload = () => {
+            _waEmbed(wa_btnSetting, wa_widgetSetting);
+          };
+        </script>
 
     <!-- script for smooth scrolling -->
     <script type="text/javascript">

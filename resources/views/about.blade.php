@@ -98,7 +98,7 @@
             </div>
             <div class="col-md-6">
                 <h3>Our Story</h3>
-                <p class="mt-3" id="te">Founded in 2021, ​QuadMonk Solution LLP is headquartered in Port Blair, A & N Islands, India. We are an IT based Company  and provide services like Website Development, Mobile Application Development, Digital Marketing etc. </p>
+                <p class="mt-3" id="te">Founded in 2021, <b>​Quadmonk Solutions LLP</b> is headquartered in Andaman & Nicobar Islands, India. In the first phase, we intend to digitalize every business in Andaman, and in the following phase, we will digitalize all remote parts of India. We offer technology solutions, content management, e-learning, and online services with the latest technologies. We are an IT solutions company trusted by SMBs, SMEs & large enterprises to grow their businesses locally. We have helped almost <b>30+ businesses</b> in just one year. Specifically designed for the services economy, our scalable and comprehensive solutions include a full-featured, modular, and secure Platform, a flexible subscription billing engine, a channel partner order and revenue management solution, and integrated global payments, as well as a constantly expanding worldwide digital affiliate network. </p>
             </div>
         </div>
     </div>
