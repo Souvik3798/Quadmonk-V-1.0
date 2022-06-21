@@ -98,10 +98,7 @@
             </div>
             <div class="col-md-6">
                 <h3>Our Story</h3>
-                <p class="mt-3" id="te">Founded in 2003, ​Momleetech is headquartered in Chennai, India. Our business name changed in 2005 from Momleetech to Thai Research Info tech. On 02 February 2017, Thai Research Info Tech​ sole proprietorship company converted into
-                    the Thai Research Info Tech (OPC) Private Limited ​company. We are an e-commerce solutions provider, Content Management ,E-learning and Online Services company with the latest technologies. Thai Research Info Tech is the leading
-                    IT solutions company trusted by SMBs, SMEs & large enterprises to grow their businesses globally. Specifically designed for the services economy, our scalable and comprehensive solutions include a full-featured, modular and secure
-                    E-Commerce platform, a flexible subscription billing engine, a channel partner order and revenue management solution, and integrated global payments, as well as a constantly expanding worldwide digital affiliate network.</p>
+                <p class="mt-3" id="te">Founded in 2021, ​QuadMonk Solution LLP is headquartered in Port Blair, A & N Islands, India. We are an IT based Company  and provide services like Website Development, Mobile Application Development, Digital Marketing etc. </p>
             </div>
         </div>
     </div>

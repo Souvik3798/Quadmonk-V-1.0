@@ -33,15 +33,20 @@
 </head>
 
 <body>
-
+    <style>
+        .nav-item{
+            padding-left: 10px;
+        }
+    </style>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top pt-1 pb-1 custom-nav">
 
         <div class="container">
-            <a class="navbar-brand" href="{{url('/')}}" id="qd"> <img src="{{ asset('images/logo.png')}}" alt="Quadmonk Solutions" style="width: 60px;"> <img src="{{asset('images/qm.png')}}" alt="Quadmonk Solutions" style="width:250px ;"></a>
+            <a class="navbar-brand" href="{{url('/')}}" id="qd"> <img src="{{ asset('images/logo.png')}}" alt="Quadmonk Solutions" style="width: 60px;"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
             <div class="collapse navbar-collapse" id="navbarNav">
+                <a class="navbar-brand  "  href="{{url('/')}}" ><img src="{{asset('images/qm.png')}}" alt="Quadmonk Solutions" style="width:180px ;"></a>
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link"  href="{{ url('/') }}">Home</a>
@@ -83,6 +88,8 @@
             </div>
         </div>
     </nav>
+
+
 
 
 
