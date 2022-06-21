@@ -20,7 +20,7 @@
                     <div class="modal-body">
                         <div class="container mt-2 mb-4">
                             <div class="row justify-content-center align-items-center">
-                                <center><img src="{{asset('images/logo.png')}}" alt="" style="width: 120px;"></center>
+                                {{-- <center><img src="{{asset('images/logo.png')}}" alt="" style="width: 120px;"></center> --}}
                                 <div class="col-md-12">
 
                                     <div class="mb-3 ">
@@ -490,7 +490,7 @@
                     <h1>Request a callback</h1>
                     <p class="mt-3">Great things in business are never done one. They're done by a team of people. For Collab, Promotion or Mega Projects Pls request call back will get back to you soon</p>
                     <div class="text-center justify-content-center">
-                        <img src="{{asset('images/logo.png')}}" alt="" style="width: 400px; padding-right: 100px;">
+                        {{-- <img src="{{asset('images/logo.png')}}" alt="" style="width: 400px; padding-right: 100px;"> --}}
                     </div>
                 </div>
                 <form method="POST" action="contact" class="col-md-6 mt-5 ">
