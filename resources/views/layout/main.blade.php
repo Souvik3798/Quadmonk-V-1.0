@@ -37,7 +37,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top pt-1 pb-1 custom-nav">
 
         <div class="container">
-            <a class="navbar-brand" href="{{url('/')}}"> <img src="{{ asset('images/logo.png')}}" alt="" style="width: 120px;"> <span class="text-danger">Q</span>uad<span class="text-primary">M</span>onk</a>
+            <a class="navbar-brand" href="{{url('/')}}" id="qd"> <img src="{{ asset('images/logo.png')}}" alt="Quadmonk Solutions" style="width: 60px;"> <img src="{{asset('images/qm.png')}}" alt="Quadmonk Solutions" style="width:250px ;"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
